@@ -15,7 +15,7 @@ max_action_id, timespans = margin(OFFSET, ac.action_set)
 # only one timespan at a time
 time_from, time_to = timespans[0]
 
-ac.set_result_info(max_action_id, timespans)
+ac.set_result_info(max_action_id, [(time_from, time_to)])
 
 # get all input observations within timespan
 input_types = [
